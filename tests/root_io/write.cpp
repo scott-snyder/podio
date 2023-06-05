@@ -1,3 +1,4 @@
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #include "podio/EventStore.h"
 #include "podio/ROOTWriter.h"
 #include "write_test.h"
