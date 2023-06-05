@@ -1,3 +1,4 @@
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #include "podio/ROOTReader.h"
 #include "read_test.h"
 
