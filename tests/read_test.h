@@ -1,6 +1,7 @@
 #ifndef PODIO_TESTS_READ_TEST_H // NOLINT(llvm-header-guard): folder structure not suitable
 #define PODIO_TESTS_READ_TEST_H // NOLINT(llvm-header-guard): folder structure not suitable
 // test data model
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #include "datamodel/ExampleClusterCollection.h"
 #include "datamodel/ExampleHitCollection.h"
 #include "datamodel/ExampleMCCollection.h"
