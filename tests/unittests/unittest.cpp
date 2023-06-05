@@ -1,4 +1,5 @@
 // STL
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #include <cstdint>
 #include <filesystem>
 #include <map>

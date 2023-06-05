@@ -1,3 +1,4 @@
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #include "podio/Frame.h"
 #include "podio/ROOTReader.h"
 #include "podio/ROOTWriter.h"
