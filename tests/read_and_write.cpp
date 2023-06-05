@@ -1,3 +1,4 @@
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #include "read_test.h"
 // podio specific includes
 #include "podio/EventStore.h"
