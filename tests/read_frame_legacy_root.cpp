@@ -1,3 +1,4 @@
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #include "read_test.h"
 
 #include "podio/Frame.h"

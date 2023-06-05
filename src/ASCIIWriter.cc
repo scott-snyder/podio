@@ -1,4 +1,5 @@
 // podio specific includes
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #include "podio/ASCIIWriter.h"
 #include "podio/CollectionBase.h"
 #include "podio/EventStore.h"
