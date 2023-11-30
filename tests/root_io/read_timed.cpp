@@ -1,3 +1,4 @@
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #include "podio/BenchmarkRecorder.h"
 #include "podio/ROOTReader.h"
 #include "podio/TimedReader.h"

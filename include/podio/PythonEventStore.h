@@ -1,6 +1,8 @@
 #ifndef PODIO_PYTHONEVENTSTORE_H
 #define PODIO_PYTHONEVENTSTORE_H
 
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+
 #include "podio/EventStore.h"
 #include "podio/GenericParameters.h"
 #include "podio/IReader.h"

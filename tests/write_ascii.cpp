@@ -1,3 +1,4 @@
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 // Data model
 #include "datamodel/EventInfoCollection.h"
 #include "datamodel/ExampleClusterCollection.h"
