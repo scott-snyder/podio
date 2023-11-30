@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "15ee58ebf750e8d05117f6b612d50cca952251d4",
-  "head": "d9ce7bce24f45a2e0d9fdb1434dc2ae7d07e0543",
+  "prev": "078955a4e020cc5396fd03e090377014b04f1a67",
+  "head": "858c0ff0b841705d1b18aafd57569fcbd1beda91",
   "applied": [],
   "unapplied": [
     "depr.podio"
