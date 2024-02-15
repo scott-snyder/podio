@@ -1,12 +1,11 @@
 {
   "version": 5,
-  "prev": "a4336d943c7b483a80cc4dcc1472f8235b6579fd",
-  "head": "f4574505595a65b29f7f21e1754139a468c7881d",
+  "prev": "437dcd2a91bafa0aa3051ed7a69adf946487b76d",
+  "head": "e0162c1da32c49723d11739597e27c19ddc751be",
   "applied": [
     "depr.podio",
     "gcc14.podio",
-    "double.podio",
-    "refresh-temp"
+    "double.podio"
   ],
   "unapplied": [],
   "hidden": [],
@@ -18,10 +17,7 @@
       "oid": "2887bfe7f4b10ac5ef38c87a60e188538d00b89f"
     },
     "double.podio": {
-      "oid": "5ad6b4d5208171d95738b5c01100c0e50698dfcf"
-    },
-    "refresh-temp": {
-      "oid": "f4574505595a65b29f7f21e1754139a468c7881d"
+      "oid": "e0162c1da32c49723d11739597e27c19ddc751be"
     }
   }
 }
