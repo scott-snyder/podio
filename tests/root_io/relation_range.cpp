@@ -1,3 +1,4 @@
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #include "datamodel/ExampleMCCollection.h"
 #include "datamodel/MutableExampleReferencingType.h"
 #include "datamodel/MutableExampleWithVectorMember.h"
