@@ -40,7 +40,8 @@ def _determine_supported_parameter_types():
     """
     idx, typename = idx_and_type
     if typename == 'float':
-      cpp_type = cppyy.gbl.std.tuple_element[idx, podio.SupportedGenericDataTypes].type
+      #if cppyy.typeid(cpp_type).name() == 'd':
+      if podio.SupportedGenericDataTypes.__cpp_name__.replace('tuple<','').replace('>','').split(',')[idx] == 'double':
       if cppyy.typeid(cpp_type).name() == 'd':
         return 'double'
       return 'float'
