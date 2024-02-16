@@ -1,11 +1,12 @@
 {
   "version": 5,
-  "prev": "958348b2ebd53907e954617022a8b9d14201843a",
-  "head": "e8a8b966456cbda59fce029b1653c24e22a761e0",
+  "prev": "cc65a5bc9a975448a73a9fff50dae3d444839417",
+  "head": "84848b16258af751f371a8469bef8f9c4281c4ee",
   "applied": [
     "depr.podio",
     "gcc14.podio",
-    "double.podio"
+    "double.podio",
+    "pyvers.podio"
   ],
   "unapplied": [],
   "hidden": [],
@@ -18,6 +19,9 @@
     },
     "double.podio": {
       "oid": "e8a8b966456cbda59fce029b1653c24e22a761e0"
+    },
+    "pyvers.podio": {
+      "oid": "84848b16258af751f371a8469bef8f9c4281c4ee"
     }
   }
 }

@@ -1,0 +1,10 @@
+Bottom: 28d81932da1226a93f6b9a06228bed94ab87b061
+Top:    28d81932da1226a93f6b9a06228bed94ab87b061
+Author: scott snyder <sss@karma>
+Date:   2024-02-16 15:44:05 -0500
+
+Fix handling of forced python version.
+
+cmake will evaluate the condition in `if(3.11.7)' as false, since
+`3.11.7' isn't convertible to a floating-point number.
+Need to use a string comparison instead.
