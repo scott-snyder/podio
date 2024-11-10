@@ -1,11 +1,10 @@
 {
   "version": 5,
-  "prev": "85a6af60f84434bf50ab1e8be3955b05a52f4063",
-  "head": "e1668e06fa31805aeadddc262866a794a3de97d2",
+  "prev": "56730c95ba8f4e393f3b2a54ef620e46f030e66d",
+  "head": "3f702463d18a19ba02e50ff04e31efe3719c9626",
   "applied": [
     "depr.podio",
     "gcc14.podio",
-    "double.podio",
     "pyvers.podio"
   ],
   "unapplied": [],
@@ -14,14 +13,11 @@
     "depr.podio": {
       "oid": "a96f685dd1b958e5a9bda459ae652dbe4567a38a"
     },
-    "double.podio": {
-      "oid": "e48fb3603f9b6e76c261b0b27aa92c1d2d0cf2f8"
-    },
     "gcc14.podio": {
       "oid": "6effae780d327072c5df6b8b37a6241a9ad3b8cb"
     },
     "pyvers.podio": {
-      "oid": "e1668e06fa31805aeadddc262866a794a3de97d2"
+      "oid": "3f702463d18a19ba02e50ff04e31efe3719c9626"
     }
   }
 }
