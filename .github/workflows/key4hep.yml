@@ -2,9 +2,6 @@ name: key4hep
 
 on:
   push:
-    branches:
-    - master
-    - 01-04-patches
   pull_request:
   workflow_dispatch:
 
