@@ -1,19 +1,14 @@
 {
   "version": 5,
-  "prev": "12b005173ca4ad20bd81bf5ab3c52663807e450b",
+  "prev": "b72979fcc101ef6368a6c37a45530d3974db3350",
   "head": "3c97c6884194533913aaef2f5b539ef1636f9828",
   "applied": [
     "gcc14.podio",
     "pyvers.podio"
   ],
-  "unapplied": [
-    "depr.podio"
-  ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
-    "depr.podio": {
-      "oid": "2ac55e122a3783da69c96675398329d288209696"
-    },
     "gcc14.podio": {
       "oid": "4fd00d37b519d980a3c1fc957aa1f5f184c16853"
     },
