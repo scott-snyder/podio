@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "e9d6ee42996e20ba06b7111b80c1452fb33ddf33",
-  "head": "0d4c245f5d8c899de15a8f58c3ebfce4aa711203",
+  "prev": "68ae1dfd8447c6a2246907a3c65908ffac3eb1da",
+  "head": "b1ae78c70841fb469997efdbe10bf9aee7ace9d8",
   "applied": [
     "pyvers.podio"
   ],
@@ -9,7 +9,7 @@
   "hidden": [],
   "patches": {
     "pyvers.podio": {
-      "oid": "0d4c245f5d8c899de15a8f58c3ebfce4aa711203"
+      "oid": "b1ae78c70841fb469997efdbe10bf9aee7ace9d8"
     }
   }
 }

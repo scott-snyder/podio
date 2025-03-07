@@ -1,10 +1,29 @@
 Bottom: a94b86788bc4a4987e92a93439eabda0c04dbce0
 Top:    8e70b65ec029db4f055c338cba46da41879ac187
 Author: scott snyder <sss@karma>
-Date:   2025-03-07 14:45:15 -0500
+Date:   2025-03-07 14:56:20 -0500
 
 Fix handling of forced python version.
 
-cmake will evaluate the condition in `if(3.11.7)' as false, since
-`3.11.7' isn't convertible to a floating-point number.
-Need to use a string comparison instead.
+We run into problems if we configure with a python version different from that
+found by the default find_dependency call for Python.
+
+We generate a cmake fragment with the lines
+
+```
+if(@REQUIRE_PYTHON_VERSION@)
+  find_dependency(Python @REQUIRE_PYTHON_VERSION@ COMPONENTS Interpreter)
+else()
+  find_dependency(Python COMPONENTS Interpreter)
+endif()
+```
+
+The if condition expands to something like
+
+```
+if(3.12.9)
+```
+
+cmake tries to interpret the argument here as a floating-point number,
+but fails to convert it, and (silently!) treats the condition as false.
+Need to do this test explictly as a string comparison instead.
