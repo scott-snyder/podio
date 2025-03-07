@@ -1,8 +1,0 @@
-Bottom: a94b86788bc4a4987e92a93439eabda0c04dbce0
-Top:    926eb5dac26cfa16bcff942f505186f5c8400045
-Author: scott snyder <sss@karma>
-Date:   2025-03-07 14:42:19 -0500
-
-Fix compilation with gcc14.
-
-Missing #include <algorithm>.
