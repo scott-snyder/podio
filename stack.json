@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "581af8be79f1f7ee77425935af02301cdb1f2e50",
-  "head": "d3f03813d7bf50f87c3aa4f32e619cebeb060113",
+  "prev": "ac1cd3e4dd8b05b6218224fb6a0c3a22936fdbbf",
+  "head": "896b27a364e9c24651906898f4decb0e871a8ff0",
   "applied": [],
   "unapplied": [
     "pyvers.podio",
