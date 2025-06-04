@@ -1,19 +1,15 @@
 {
   "version": 5,
-  "prev": "cab88c36f2afca3279181dc600f65a4175b95bac",
-  "head": "8499ecc9d081b73c7ac029915ceb9de34d4c28db",
+  "prev": "bae909e7a003db63bfc4410e54221710506236cf",
+  "head": "748659ea7ec16625f945eedc2787b971acbf0b06",
   "applied": [
-    "pyvers.podio",
     "ci"
   ],
   "unapplied": [],
   "hidden": [],
   "patches": {
     "ci": {
-      "oid": "8499ecc9d081b73c7ac029915ceb9de34d4c28db"
-    },
-    "pyvers.podio": {
-      "oid": "e5ff6d70a7e21625d02fc183d6098e7891166c13"
+      "oid": "748659ea7ec16625f945eedc2787b971acbf0b06"
     }
   }
 }
