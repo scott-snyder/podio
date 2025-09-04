@@ -44,6 +44,13 @@ FUNCTION(PODIO_ADD_LIB_AND_DICT libname headers sources selection )
   # prevent generating dictionary twice
   set_target_properties(${dictname}-dictgen PROPERTIES EXCLUDE_FROM_ALL TRUE)
   target_sources(${dictname} PRIVATE ${dictname}.cxx)
+
+  # By default, the generated Target file will set up the include paths for
+  # our libraries using INTERFACE_INCLUDE_DIRECTORIES, meaning that they
+  # will be included using -isystem rather than -I.  However, this can hide
+  # warnings.  Adjust the behavior to use -I instead.
+  set_target_properties(${libname} PROPERTIES EXPORT_NO_SYSTEM ON)
+  set_target_properties(${dictname} PROPERTIES EXPORT_NO_SYSTEM ON)
 ENDFUNCTION()
 
 
@@ -170,6 +177,12 @@ target_link_libraries(podioIO PUBLIC podio::podio podio::podioRootIO)
 if(ENABLE_SIO)
   target_link_libraries(podioIO PUBLIC podio::podioSioIO)
 endif()
+
+# By default, the generated Target file will set up the include paths for
+# our libraries using INTERFACE_INCLUDE_DIRECTORIES, meaning that they
+# will be included using -isystem rather than -I.  However, this can hide
+# warnings.  Adjust the behavior to use -I instead.
+set_target_properties(podioIO PROPERTIES EXPORT_NO_SYSTEM ON)
 
 
 # --- DataSource
