@@ -26,6 +26,11 @@ FUNCTION(PODIO_ADD_LIB_AND_DICT libname headers sources selection )
   target_include_directories(${libname} PUBLIC
     $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
+
+  # By default, the generated Target file will set up the include paths for
+  # our libraries using INTERFACE_INCLUDE_DIRECTORIES, meaning that they
+  # will be included using -isystem rather than -I.  However, this can hide
+  # warnings.  Adjust the behavior to use -I instead.
   set_target_properties(${libname} PROPERTIES EXPORT_NO_SYSTEM ON)
 
   # dictionary
@@ -157,7 +162,6 @@ set(io_headers
 
 add_library(podioIO SHARED ${io_sources})
 add_library(podio::podioIO ALIAS podioIO)
-set_target_properties(podioIO PROPERTIES EXPORT_NO_SYSTEM ON)
 target_include_directories(podioIO PUBLIC
     $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
@@ -165,6 +169,12 @@ target_link_libraries(podioIO PUBLIC podio::podio podio::podioRootIO)
 if(ENABLE_SIO)
   target_link_libraries(podioIO PUBLIC podio::podioSioIO)
 endif()
+
+# By default, the generated Target file will set up the include paths for
+# our libraries using INTERFACE_INCLUDE_DIRECTORIES, meaning that they
+# will be included using -isystem rather than -I.  However, this can hide
+# warnings.  Adjust the behavior to use -I instead.
+set_target_properties(podioIO PROPERTIES EXPORT_NO_SYSTEM ON)
 
 
 # --- DataSource
