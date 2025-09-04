@@ -1,11 +1,10 @@
 {
   "version": 5,
-  "prev": "cb93fc48c94fd987fc5236d150b0d0e06c22bd42",
-  "head": "7b227ff290e67ecae13cd9fb56511aa146a1d3d5",
+  "prev": "99ebde8a04bae900dca0746c9cec6a1904ab10fd",
+  "head": "b6fbc993485650054e466c58ffe200d12c7dcdc9",
   "applied": [
     "ci",
-    "nosystem",
-    "refresh-temp"
+    "nosystem"
   ],
   "unapplied": [],
   "hidden": [],
@@ -14,10 +13,7 @@
       "oid": "1adb63cab4038152b20e73bd36e34f9366a3f544"
     },
     "nosystem": {
-      "oid": "f2d2f3a4e12ba1d58aec466a5e357f477f24379c"
-    },
-    "refresh-temp": {
-      "oid": "7b227ff290e67ecae13cd9fb56511aa146a1d3d5"
+      "oid": "b6fbc993485650054e466c58ffe200d12c7dcdc9"
     }
   }
 }
