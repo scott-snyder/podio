@@ -57,9 +57,3 @@ check_required_components(podio)
 include(FindPackageHandleStandardArgs)
 get_property(TEST_PODIO_LIBRARY TARGET podio::podio PROPERTY LOCATION)
 find_package_handle_standard_args(podio DEFAULT_MSG CMAKE_CURRENT_LIST_FILE TEST_PODIO_LIBRARY)
-
-# By default, the generated Target file will set up the include paths for
-# our libraries using INTERFACE_INCLUDE_DIRECTORIES, meaning that they
-# will be included using -isystem rather than -I.  However, this can hide
-# warnings.  Adjust the behavior to use -I instead.
-set_target_properties(podio::podio PROPERTIES SYSTEM OFF)

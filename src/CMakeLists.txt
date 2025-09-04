@@ -26,6 +26,7 @@ FUNCTION(PODIO_ADD_LIB_AND_DICT libname headers sources selection )
   target_include_directories(${libname} PUBLIC
     $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
+  set_target_properties(${libname} PROPERTIES EXPORT_NO_SYSTEM ON)
 
   # dictionary
   set(dictname ${libname}Dict)
@@ -156,6 +157,7 @@ set(io_headers
 
 add_library(podioIO SHARED ${io_sources})
 add_library(podio::podioIO ALIAS podioIO)
+set_target_properties(podioIO PROPERTIES EXPORT_NO_SYSTEM ON)
 target_include_directories(podioIO PUBLIC
     $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
