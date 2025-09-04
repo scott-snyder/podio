@@ -3,9 +3,6 @@ name: ubuntu
 
 on:
   push:
-    branches:
-    - master
-    - v01-04-patches
   pull_request:
   workflow_dispatch:
 
