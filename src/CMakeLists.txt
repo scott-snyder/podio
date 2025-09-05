@@ -27,12 +27,6 @@ FUNCTION(PODIO_ADD_LIB_AND_DICT libname headers sources selection )
     $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
-  # By default, the generated Target file will set up the include paths for
-  # our libraries using INTERFACE_INCLUDE_DIRECTORIES, meaning that they
-  # will be included using -isystem rather than -I.  However, this can hide
-  # warnings.  Adjust the behavior to use -I instead.
-  set_target_properties(${libname} PROPERTIES EXPORT_NO_SYSTEM ON)
-
   # dictionary
   set(dictname ${libname}Dict)
   add_library(${dictname} SHARED)
@@ -49,6 +43,13 @@ FUNCTION(PODIO_ADD_LIB_AND_DICT libname headers sources selection )
   # prevent generating dictionary twice
   set_target_properties(${dictname}-dictgen PROPERTIES EXCLUDE_FROM_ALL TRUE)
   target_sources(${dictname} PRIVATE ${dictname}.cxx)
+
+  # By default, the generated Target file will set up the include paths for
+  # our libraries using INTERFACE_INCLUDE_DIRECTORIES, meaning that they
+  # will be included using -isystem rather than -I.  However, this can hide
+  # warnings.  Adjust the behavior to use -I instead.
+  set_target_properties(${libname} PROPERTIES EXPORT_NO_SYSTEM ON)
+  set_target_properties(${dictname} PROPERTIES EXPORT_NO_SYSTEM ON)
 ENDFUNCTION()
 
 
