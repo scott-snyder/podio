@@ -1,12 +1,11 @@
 {
   "version": 5,
-  "prev": "92a2265ad5b9cdda97f171f5425adc6865078250",
-  "head": "81bc22f6ae6741c578809ef1fc95e3003afb5467",
+  "prev": "de9bebb910d6c3ae9f38fa23f07e8fab38a25b96",
+  "head": "5333902b301690d948b354b7f45408062cf55136",
   "applied": [
     "ci",
     "nosystem",
-    "cmake",
-    "refresh-temp"
+    "cmake"
   ],
   "unapplied": [],
   "hidden": [],
@@ -15,13 +14,10 @@
       "oid": "1adb63cab4038152b20e73bd36e34f9366a3f544"
     },
     "cmake": {
-      "oid": "1c934b4975decef689a654817a5e7d4f4bef2523"
+      "oid": "5333902b301690d948b354b7f45408062cf55136"
     },
     "nosystem": {
       "oid": "38d8fff18d467af590bc523386a228e6e5daa70c"
-    },
-    "refresh-temp": {
-      "oid": "81bc22f6ae6741c578809ef1fc95e3003afb5467"
     }
   }
 }
