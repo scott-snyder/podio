@@ -1,13 +1,12 @@
 {
   "version": 5,
-  "prev": "62fc1090fde16bb5ba76609ce25d72388c31a231",
-  "head": "e769923a182e4be631310e05c2771a518e98bbd8",
+  "prev": "be3d1ba6639203661b39d731bf86123c6ce137a3",
+  "head": "cbe1df02dcd4f67506cabbbceaa66fe2692989d3",
   "applied": [
     "ci",
     "nosystem",
     "cmake",
-    "effc",
-    "refresh-temp"
+    "effc"
   ],
   "unapplied": [],
   "hidden": [],
@@ -19,13 +18,10 @@
       "oid": "5333902b301690d948b354b7f45408062cf55136"
     },
     "effc": {
-      "oid": "995d84cb439eb7a2a13aa88568d3d97797c6995c"
+      "oid": "cbe1df02dcd4f67506cabbbceaa66fe2692989d3"
     },
     "nosystem": {
       "oid": "38d8fff18d467af590bc523386a228e6e5daa70c"
-    },
-    "refresh-temp": {
-      "oid": "e769923a182e4be631310e05c2771a518e98bbd8"
     }
   }
 }
