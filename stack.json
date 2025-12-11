@@ -1,14 +1,13 @@
 {
   "version": 5,
-  "prev": "5f09f2362a9efc64ee4f624ed5502a1bf9ac8511",
-  "head": "2a5392cc3c2d7e0bd2deef649d7d646ca26bc86f",
+  "prev": "e5813bd52a591f9c9e76fae779026f5190298edd",
+  "head": "fb875048405cc62fabd822be4372451ec7451b9d",
   "applied": [
     "ci",
     "nosystem",
     "cmake",
     "effc",
-    "gcc16-newxx",
-    "refresh-temp"
+    "gcc16-newxx"
   ],
   "unapplied": [],
   "hidden": [],
@@ -23,13 +22,10 @@
       "oid": "ffd84833afcd822c46e318f7f16ccaa4a18fb695"
     },
     "gcc16-newxx": {
-      "oid": "7b5bda02bfbd201a608d8f1f496f5368774d554f"
+      "oid": "fb875048405cc62fabd822be4372451ec7451b9d"
     },
     "nosystem": {
       "oid": "9a625b289591331670b51aa017049c25c7fe7919"
-    },
-    "refresh-temp": {
-      "oid": "2a5392cc3c2d7e0bd2deef649d7d646ca26bc86f"
     }
   }
 }
