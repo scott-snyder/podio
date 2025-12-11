@@ -272,27 +272,29 @@ inline auto reconstructCollectionInfo(TTree* eventTree, podio::CollectionIDTable
 }
 
 /**
- * Check whether existingColls and candidateColls both contain the same
+ * Check whether collInfo and candidateColls both contain the same
  * collection names. Returns false if the two vectors differ in content. Inputs
  * can have random order wrt each other, but the assumption is that each vector
  * only contains unique names.
  */
 inline bool checkConsistentColls(const std::vector<root_utils::CollectionWriteInfo>& collInfo,
-                                 const std::vector<std::string>& candidateColls) {
-  if (collInfo.size() != candidateColls.size()) {
+                                 const std::vector<std::string>& candidateColls_in) {
+  if (collInfo.size() != candidateColls_in.size()) {
     return false;
   }
 
-  for (const auto& id : candidateColls) {
-    std::ranges::binary_search(
-        collInfo, id,
-        [](const auto& lhs, const auto& rhs) {
-          return lhs.size() == rhs.size() &&
-              std::lexicographical_compare(
-                     lhs.begin(), lhs.end(), rhs.begin(), rhs.end(),
-                     [](const auto cl, const auto cr) { return std::tolower(cl) < std::tolower(cr); });
-        },
-        &root_utils::CollectionWriteInfo::name);
+  auto makeLower = [](std::string& s) {
+    std::ranges::for_each (s, [](char& c) { c = std::tolower(c); });
+  };
+
+  std::vector<std::string> candidateColls = candidateColls_in;
+  std::ranges::for_each (candidateColls, makeLower);
+  std::ranges::sort (candidateColls);
+
+  for (const root_utils::CollectionWriteInfo& info : collInfo) {
+    std::string name = info.name;
+    makeLower (name);
+    if (!std::ranges::binary_search (candidateColls, name)) return false;
   }
 
   return true;
