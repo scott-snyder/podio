@@ -1,0 +1,21 @@
+Bottom: ac25938f7e6411f591990e7f068bc2ae5a794707
+Top:    ac25938f7e6411f591990e7f068bc2ae5a794707
+Author: sss <sss@karma>
+Date:   2025-12-11 13:58:16 -0500
+
+Fixes for checkConsistentColls.
+
+checkConsistentColls was supposed to be checking that two collections are
+the same, but it was really only checking that the sizes of the collections
+are the same.
+
+It goes through one collection and does a binary_search for the item
+in the other collection.  But first, the result of the binary_search
+was ignored, and second, the collections are documented as being unordered,
+so binary_search isn't appropriate in any case.
+
+Rewrite to try to fix this.  To avoid N^2 behavior, copy the collection
+that's a simple vector<string>, normalize the names, and sort it.
+We can then binary_search within that vector.
+
+Fixes warnings seen with gcc16.
