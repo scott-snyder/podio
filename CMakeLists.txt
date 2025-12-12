@@ -36,7 +36,7 @@ endif()
 # ``-DCMAKE_CXX_STANDARD=<standard>`` when invoking CMake
 set(CMAKE_CXX_STANDARD 20 CACHE STRING "")
 
-if(NOT CMAKE_CXX_STANDARD MATCHES "20|23")
+if(NOT CMAKE_CXX_STANDARD MATCHES "20|23|26")
   message(FATAL_ERROR "Unsupported C++ standard: ${CMAKE_CXX_STANDARD}")
 endif()
 
