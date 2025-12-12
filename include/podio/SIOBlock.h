@@ -36,7 +36,7 @@ void writeMapLike(sio::write_device& device, const MapLikeT& map) {
   for (const auto& [key, value] : map) {
     device.data(key);
     using MappedType = detail::GetMappedType<MapLikeT>;
-    if constexpr (std::is_trivial_v<MappedType>) {
+    if constexpr (std::is_trivially_default_constructible_v<MappedType> && std::is_trivially_copyable_v<MappedType>) {
       handlePODDataSIO(device, &value, 1);
     } else {
       device.data(value);
