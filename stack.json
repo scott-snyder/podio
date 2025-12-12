@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "b7c145f8ec7de74690bb5e296582f178924330e5",
-  "head": "433c10ee1741ee530a27f43b1528cadc4fb8fe51",
+  "prev": "5a095774caeb0184583105e64acab842c0d2746b",
+  "head": "943694ef59123e69a3185fa74030408f50d4e4aa",
   "applied": [
     "ci",
     "nosystem",
@@ -9,8 +9,7 @@
     "effc",
     "gcc16-newxx",
     "checkConsistent",
-    "cxx26",
-    "refresh-temp"
+    "cxx26"
   ],
   "unapplied": [],
   "hidden": [],
@@ -25,7 +24,7 @@
       "oid": "4bde7f5751c5cb69ae0cc23516879ca83bc9bb95"
     },
     "cxx26": {
-      "oid": "f3efecdf68f6bf7b79195d9047772f540e9efd99"
+      "oid": "943694ef59123e69a3185fa74030408f50d4e4aa"
     },
     "effc": {
       "oid": "ffd84833afcd822c46e318f7f16ccaa4a18fb695"
@@ -35,9 +34,6 @@
     },
     "nosystem": {
       "oid": "9a625b289591331670b51aa017049c25c7fe7919"
-    },
-    "refresh-temp": {
-      "oid": "433c10ee1741ee530a27f43b1528cadc4fb8fe51"
     }
   }
 }
