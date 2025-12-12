@@ -1,0 +1,21 @@
+Bottom: e1a4648e10dedad58b67adfe6156f7719b09d376
+Top:    e1a4648e10dedad58b67adfe6156f7719b09d376
+Author: sss <sss@karma>
+Date:   2025-12-12 14:37:59 -0500
+
+Allow building with C++26.
+
+ - Enable c++26 in CMakeLists.txt
+ - std::is_trivial is deprecated in C++26.  Use
+   std::is_trivially_default_constructible and std::is_trivially_copyable
+   instead.
+
+ - This code:
+
+```
+      const std::vector<std::string>& v = ...;
+      ... = std::ranges::find (v, "foo");
+```
+
+   works with C++23 but not with C++26.  The second type here is an array,
+   and array equality comparison was deprecated in C++20 and removed in C++26.
