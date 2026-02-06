@@ -1,39 +1,40 @@
 {
   "version": 5,
-  "prev": "4bb623de9e469146f43731ce1c56019a66a89add",
-  "head": "ec083255b4f0a8bca8f6eff9e58559e2e6cb10bc",
-  "applied": [],
-  "unapplied": [
+  "prev": "dabd1b261b6b3912eb3db926cb6278aca9b2f9d4",
+  "head": "b3134401bb286902c38af977a73b5ce13ed04cca",
+  "applied": [
     "ci",
     "nosystem",
     "cmake",
     "effc",
     "gcc16-newxx",
-    "checkConsistent",
+    "checkConsistent"
+  ],
+  "unapplied": [
     "cxx26"
   ],
   "hidden": [],
   "patches": {
     "checkConsistent": {
-      "oid": "818009e4b3b13930ab2d378cee58c223a2c2c030"
+      "oid": "b3134401bb286902c38af977a73b5ce13ed04cca"
     },
     "ci": {
-      "oid": "4bb740f76972d4b11063aeb2cf48b5566c18e094"
+      "oid": "d7b3ee69deefee9d66c378e9993dfca3d3783172"
     },
     "cmake": {
-      "oid": "4bde7f5751c5cb69ae0cc23516879ca83bc9bb95"
+      "oid": "024066077595210b821291475f5a025f8e31d757"
     },
     "cxx26": {
       "oid": "943694ef59123e69a3185fa74030408f50d4e4aa"
     },
     "effc": {
-      "oid": "ffd84833afcd822c46e318f7f16ccaa4a18fb695"
+      "oid": "f3fe4e137bc53f0ea43cf926281b7dea182333bb"
     },
     "gcc16-newxx": {
-      "oid": "fb875048405cc62fabd822be4372451ec7451b9d"
+      "oid": "fae21805828fc4605410c2dab8ff4a1d99774d0e"
     },
     "nosystem": {
-      "oid": "9a625b289591331670b51aa017049c25c7fe7919"
+      "oid": "db7185491d848e7277eaf9ce64ec2b4ce25f83d8"
     }
   }
 }
