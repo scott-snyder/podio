@@ -1,15 +1,14 @@
 {
   "version": 5,
-  "prev": "075fec62d94d38c7cff8c343cb68ddbaba299401",
-  "head": "d67b61a63779441fc47f68f7e8ad46c3db5283c5",
+  "prev": "c33e6c86e009368e3bf4b5e541725752d94cdf84",
+  "head": "b73030279590b123d77083f08f65a97b70cb7ce9",
   "applied": [
     "ci",
     "nosystem",
     "cmake",
     "effc",
     "gcc16-newxx",
-    "checkConsistent",
-    "refresh-temp"
+    "checkConsistent"
   ],
   "unapplied": [
     "cxx26"
@@ -17,7 +16,7 @@
   "hidden": [],
   "patches": {
     "checkConsistent": {
-      "oid": "b3134401bb286902c38af977a73b5ce13ed04cca"
+      "oid": "b73030279590b123d77083f08f65a97b70cb7ce9"
     },
     "ci": {
       "oid": "d7b3ee69deefee9d66c378e9993dfca3d3783172"
@@ -36,9 +35,6 @@
     },
     "nosystem": {
       "oid": "db7185491d848e7277eaf9ce64ec2b4ce25f83d8"
-    },
-    "refresh-temp": {
-      "oid": "d67b61a63779441fc47f68f7e8ad46c3db5283c5"
     }
   }
 }
