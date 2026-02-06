@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "5a095774caeb0184583105e64acab842c0d2746b",
-  "head": "943694ef59123e69a3185fa74030408f50d4e4aa",
-  "applied": [
+  "prev": "111723498574d9db0c6289cc6e38ffccee0ad380",
+  "head": "930efc478c0162e643508e317704eccaaa2491bb",
+  "applied": [],
+  "unapplied": [
     "ci",
     "nosystem",
     "cmake",
@@ -11,7 +12,6 @@
     "checkConsistent",
     "cxx26"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "checkConsistent": {
