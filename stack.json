@@ -1,16 +1,17 @@
 {
   "version": 5,
-  "prev": "dae87ee93f3e8e66c86d3f81af0ca3157547f1be",
-  "head": "0a3b9713e2b872534e497ee495d8ab8299ec6e37",
+  "prev": "65f9502e3f5105720ad1d69048cb73b2a455514f",
+  "head": "b8c51294e22f3c673411f343aaa12fc3336bb854",
   "applied": [
     "cxx26",
     "nosystem",
     "cmake",
     "effc",
-    "gcc16-newxx",
+    "gcc16-newxx"
+  ],
+  "unapplied": [
     "ci"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "ci": {
