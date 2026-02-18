@@ -1,35 +1,35 @@
 {
   "version": 5,
-  "prev": "f7367953127184c1e2ac093915615799b23dd5e0",
-  "head": "56470cadf579429fd5a96a1c2deae2943042b66c",
+  "prev": "dae87ee93f3e8e66c86d3f81af0ca3157547f1be",
+  "head": "0a3b9713e2b872534e497ee495d8ab8299ec6e37",
   "applied": [
-    "ci",
     "cxx26",
     "nosystem",
     "cmake",
     "effc",
-    "gcc16-newxx"
+    "gcc16-newxx",
+    "ci"
   ],
   "unapplied": [],
   "hidden": [],
   "patches": {
     "ci": {
-      "oid": "d7b3ee69deefee9d66c378e9993dfca3d3783172"
+      "oid": "0a3b9713e2b872534e497ee495d8ab8299ec6e37"
     },
     "cmake": {
-      "oid": "3beb6ca860d5a582527f9e9872dae81a0db427f5"
+      "oid": "4b66c5525d59c9beabd18cd57f656994490be510"
     },
     "cxx26": {
-      "oid": "0ee83e4af1fa3b9e5ba74fb0bc5d618c64a415f6"
+      "oid": "8f724d6b9c466eaa815adb2cc08ca2da461b4128"
     },
     "effc": {
-      "oid": "20f878e198ba57e052e9c4056e586c1fbcf4647d"
+      "oid": "0a369451add95f1237fcc86f49a8b54a0ad9ad8b"
     },
     "gcc16-newxx": {
-      "oid": "56470cadf579429fd5a96a1c2deae2943042b66c"
+      "oid": "b8c51294e22f3c673411f343aaa12fc3336bb854"
     },
     "nosystem": {
-      "oid": "c9cc903d0229ded41b9c09fe893cf824d1fa605f"
+      "oid": "dddf7290a13704e3f146c07f4dbe3b4ff47354d6"
     }
   }
 }
