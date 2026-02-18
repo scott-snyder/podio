@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "65f9502e3f5105720ad1d69048cb73b2a455514f",
+  "prev": "2725aff4fa49a1d4b0c2c5f0c0ae641cce85c7eb",
   "head": "b8c51294e22f3c673411f343aaa12fc3336bb854",
   "applied": [
     "cxx26",
@@ -9,10 +9,10 @@
     "effc",
     "gcc16-newxx"
   ],
-  "unapplied": [
+  "unapplied": [],
+  "hidden": [
     "ci"
   ],
-  "hidden": [],
   "patches": {
     "ci": {
       "oid": "0a3b9713e2b872534e497ee495d8ab8299ec6e37"
