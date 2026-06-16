@@ -1,0 +1,11 @@
+Bottom: e0283a28a7782ecc1fa69a6a167db89e0fb7f61d
+Top:    e0283a28a7782ecc1fa69a6a167db89e0fb7f61d
+Author: sss <sss@karma>
+Date:   2026-06-16 11:01:44 -0400
+
+Suppress warnings from clang22.
+
+__COUNTER__ has been a non-standard extension supported by most compilers,
+but is set to be added to the standard in c2y (c++29).
+clang22 now warns about using __COUNTER__ if c2y hasn't been selected.
+Suppress this warning.
