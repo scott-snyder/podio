@@ -1,15 +1,15 @@
 {
   "version": 5,
-  "prev": "21fc3f0176d8be89b35cfc4825f8cfeeb86dcb06",
-  "head": "15538fe930e233dfd981370d8dd787deaab58aaa",
+  "prev": "c91686681218cd3215680f5c1f4ff68954db6aa2",
+  "head": "27363aa971943948210ec548e6a6abc23ced7406",
   "applied": [
     "nosystem",
     "cmake",
     "effc",
-    "gcc16-newxx"
+    "gcc16-newxx",
+    "cxx26"
   ],
   "unapplied": [
-    "cxx26",
     "clang22"
   ],
   "hidden": [
@@ -26,7 +26,7 @@
       "oid": "925d1b63c4bf7fe928a5923a4336d3df3a3474ac"
     },
     "cxx26": {
-      "oid": "d20e41d0385828e7ab02d36a97c55274a25c9852"
+      "oid": "27363aa971943948210ec548e6a6abc23ced7406"
     },
     "effc": {
       "oid": "7b1e2172d7a191b2bdc88e5a677b26e0b7f8c21a"
