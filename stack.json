@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "57f980ba1a258e95bdf67684986d89dc434cbe4d",
-  "head": "d5eea52a2db9ac282bb434415107b56974769d72",
-  "applied": [
+  "prev": "8e55b0b95cc6489ed47c531901adc9af612799c0",
+  "head": "ec083255b4f0a8bca8f6eff9e58559e2e6cb10bc",
+  "applied": [],
+  "unapplied": [
     "cxx26",
     "nosystem",
     "cmake",
@@ -10,7 +11,6 @@
     "gcc16-newxx",
     "clang22"
   ],
-  "unapplied": [],
   "hidden": [
     "ci"
   ],
