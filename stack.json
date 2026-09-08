@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "c91686681218cd3215680f5c1f4ff68954db6aa2",
+  "prev": "c1ec77108a84c8bb2c4977c2d3934cbb0bf0968b",
   "head": "27363aa971943948210ec548e6a6abc23ced7406",
   "applied": [
     "nosystem",
@@ -9,18 +9,13 @@
     "gcc16-newxx",
     "cxx26"
   ],
-  "unapplied": [
-    "clang22"
-  ],
+  "unapplied": [],
   "hidden": [
     "ci"
   ],
   "patches": {
     "ci": {
       "oid": "0a3b9713e2b872534e497ee495d8ab8299ec6e37"
-    },
-    "clang22": {
-      "oid": "ca3b628dd9c3dc2809d5d4a09b2203a01c6b423e"
     },
     "cmake": {
       "oid": "925d1b63c4bf7fe928a5923a4336d3df3a3474ac"
