@@ -55,6 +55,8 @@ TEST_CASE("Frame basics", "[frame][basics]") {
     // Can't rely on an insertion order here
     REQUIRE(std::ranges::find(stringKeys, "aString") != stringKeys.end());
     REQUIRE(std::ranges::find(stringKeys, "someStrings") != stringKeys.end());
+    //REQUIRE(std::ranges::find(stringKeys, std::string("aString")) != stringKeys.end());
+    //REQUIRE(std::ranges::find(stringKeys, std::string("someStrings")) != stringKeys.end());
 
     // Check the cases with empty vectors as parameters
     event.putParameter("emptyVec", std::vector<int>{});
