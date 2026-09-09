@@ -1,14 +1,13 @@
 {
   "version": 5,
-  "prev": "54972279cb1e5aa61b46b1500139b5eedbdb3b78",
-  "head": "9a72332043f31406f048f0e76b6ac6e540fdc661",
+  "prev": "3050b527bf198c140197750565bf7ae7880a0e52",
+  "head": "95a818c31964d6c05322a2880d2932f0cff0eb95",
   "applied": [
     "nosystem",
     "cmake",
     "effc",
     "gcc16-newxx",
-    "cxx26",
-    "refresh-temp"
+    "cxx26"
   ],
   "unapplied": [],
   "hidden": [
@@ -22,7 +21,7 @@
       "oid": "925d1b63c4bf7fe928a5923a4336d3df3a3474ac"
     },
     "cxx26": {
-      "oid": "27363aa971943948210ec548e6a6abc23ced7406"
+      "oid": "95a818c31964d6c05322a2880d2932f0cff0eb95"
     },
     "effc": {
       "oid": "7b1e2172d7a191b2bdc88e5a677b26e0b7f8c21a"
@@ -32,9 +31,6 @@
     },
     "nosystem": {
       "oid": "55d14c9e0e2ed06f3eb1b64a2e5b48340659b09c"
-    },
-    "refresh-temp": {
-      "oid": "9a72332043f31406f048f0e76b6ac6e540fdc661"
     }
   }
 }
