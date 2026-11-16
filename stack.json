@@ -1,15 +1,15 @@
 {
   "version": 5,
-  "prev": "3050b527bf198c140197750565bf7ae7880a0e52",
-  "head": "95a818c31964d6c05322a2880d2932f0cff0eb95",
-  "applied": [
+  "prev": "14d2aa3d83c2626c05133d5917dbcf0e461b8489",
+  "head": "50da22b6e52bc227edaaa1732837b31ee1e0d74a",
+  "applied": [],
+  "unapplied": [
     "nosystem",
     "cmake",
     "effc",
     "gcc16-newxx",
     "cxx26"
   ],
-  "unapplied": [],
   "hidden": [
     "ci"
   ],
